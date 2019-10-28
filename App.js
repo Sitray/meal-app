@@ -8,7 +8,7 @@ import MealDetailScreen from './screens/MealDetailScreen';
 
 const fetchFonts = () => {
   return Font.loadAsync({
-    'open-sans': require('./assets/fonts/OpenSans-regular.ttf'),
+    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
     'open-sans': require('./assets/fonts/OpenSans-Bold.ttf')
   });
 };
