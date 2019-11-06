@@ -32,14 +32,14 @@ const MealDetailScreen = props => {
       <Image source={{ uri: selectedMeal.imageUrl }} style={styles.image} />
       <View style={styles.details}>
         <DefaultText>{props.duration}m</DefaultText>
-        <DefaultText>{props.complexity.toUpperCase()}</DefaultText>
-        <DefaultText>{props.affordability.toUpperCase()}</DefaultText>
+        <DefaultText>{props.complexity}</DefaultText>
+        <DefaultText>{props.affordability}</DefaultText>
       </View>
       <Text style={styles.title}>Ingredients</Text>
       {selectedMeal.ingredients.map(ingridient => (
         <ListItem key={ingridient}>{ingridient}</ListItem>
       ))}
-      <Text style={styles.title}>Ingredients</Text>
+      <Text style={styles.title}>Steps</Text>
       {selectedMeal.steps.map(step => (
         <ListItem key={step}>{step}</ListItem>
       ))}

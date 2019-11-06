@@ -91,7 +91,7 @@ FilterScreen.navigationOptions = navData => {
         <Item
           title="Save"
           iconName="ios-save"
-          onPress={navData.navigation.getPram('save')}
+          onPress={navData.navigation.getParam('save')}
         />
       </HeaderButtons>
     )
